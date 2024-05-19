@@ -1,0 +1,8 @@
+services:
+  npm:
+    image: node:lts-alpine
+    working_dir: /root
+    volumes:
+      - .:/root
+    entrypoint:
+      - npm
